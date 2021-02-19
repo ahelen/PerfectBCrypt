@@ -116,7 +116,11 @@ open class BCrypt {
             guard ret.count == hashed.count else {
                 return false
             }
-            return 0 == timingsafe_bcmp(ret, hashed, ret.count)
+            if #available(iOS 10.1, *) {
+                return 0 == timingsafe_bcmp(ret, hashed, ret.count)
+            } else {
+                return false
+            }
         }catch {
             return false
         }
