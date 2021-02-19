@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BCrypt'
-  s.version          = '1.0.0'
+  s.version          = '1.0.2'
   s.summary          = 'A Swift version of the BCrypt.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ This CocoaPod is a Swift version of PerfectBCrypt adopted to iOS.
   s.source           = { :git => 'https://github.com/aberkunov/PerfectBCrypt.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.1'
+  s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
   
   s.pod_target_xcconfig = {
